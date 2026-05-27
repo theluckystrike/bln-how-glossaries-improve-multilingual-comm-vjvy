@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why I started using glossaries for multilingual work</title>
+<meta name="description" content="Glossaries fixed most of my translation consistency problems. Here&#x27;s what I learned building them.">
+<link rel="canonical" href="https://belikenative.com/how-glossaries-improve-multilingual-communication/">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;background:#fff}
+h1{font-size:1.8em;line-height:1.3;margin-bottom:8px}
+h2{font-size:1.4em;margin-top:32px}
+h3{font-size:1.2em;margin-top:24px}
+p{margin:16px 0}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:24px}
+li{margin:8px 0}
+.source{color:#666;font-size:14px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #eee}
+.footer{margin-top:40px;padding-top:20px;border-top:1px solid #eee;color:#666;font-size:14px}
+</style>
+</head>
+<body>
+<article>
+<h1>Why I started using glossaries for multilingual work</h1>
+<div class="source">Originally published at <a href="https://belikenative.com/how-glossaries-improve-multilingual-communication/">belikenative.com/how-glossaries-improve-multilingual-communication</a></div>
+<p>I kept running into the same problem on a project last year: different translators used different terms for the same concept, and nobody caught it until users complained. Full disclosure: I built <a href="https://belikenative.com">BeLikeNative</a>, a free Chrome extension for real-time grammar and writing help. Take my perspective accordingly.</p>
+<p>That experience pushed me to look at glossaries more seriously. Not the dusty reference books from college. I mean living documents that pin down exactly how your team translates specific terms across languages.</p>
+<h2>What a glossary actually does</h2>
+<p>A glossary is a shared list of approved terms and their translations. Simple concept. But the effect compounds fast.</p>
+<p>Without one, you get three translators using three different words for "dashboard" in French. Or someone translating "patient intake" literally instead of using the standard medical phrase. I've seen both happen on real projects.</p>
+<p>The consistency angle is obvious. What surprised me was how much a glossary speeds things up. Translators stop guessing. Reviewers stop flagging the same terms over and over. On one project, our review cycles dropped by about 40% after we introduced a shared glossary.</p>
+<h2>The medical translation problem</h2>
+<p>Healthcare is where glossary mistakes get serious. A Swedish colleague once pointed out that "wound" and "ulcer" share the same word in Swedish, but mean different things in English. Without a glossary that spells this out, a translator might pick the wrong one. In a clinical context, that's a real problem.</p>
+<p>There's a cultural layer too. One team I talked to had translated "Did you pass wind in the past 24 hours?" for a patient-facing app. Technically correct. But patients didn't understand the phrasing. They had to swap it for something more colloquial. A good glossary captures those preferences, not just the literal translations.</p>
+<h2>Technical docs and onboarding</h2>
+<p>I've worked on documentation projects where the glossary was the single most useful artifact we produced. New writers could look up the approved term for any concept instead of inventing their own phrasing. It cut onboarding time significantly.</p>
+<p>Elmira, a technical writer I follow, put it well: a glossary saves you from guessing meanings from context and helps you avoid mistakes. That matches my experience exactly. The tricky part is keeping the glossary alive. Definitions go stale. New features introduce new terms. Someone has to own it.</p>
+<p>The approach that worked for me was straightforward. Assign a glossary owner on each project, review terms quarterly, and keep the file somewhere everyone already looks (usually the repo wiki or a pinned doc in the team channel).</p>
+<h2>Legal and finance terminology</h2>
+<p>Legal and financial content is where glossary discipline matters most. Jurisdiction-specific terms don't translate cleanly. "Liability" means something slightly different under UK law than US law, and both differ from the German concept.</p>
+<p>I've seen teams build separate glossary sections for each jurisdiction they operate in. It adds maintenance overhead, but it prevents the kind of ambiguity that causes compliance problems. Pre-defined term references also speed up the translation process. Some teams I've talked to report cutting translation time by more than half after adopting structured glossaries paired with translation memory tools.</p>
+<h2>Where AI fits in</h2>
+<p>AI has changed how I think about glossary creation. Instead of manually combing through documents to extract terms, I can feed a corpus into a language model and get a draft term list in minutes. It still needs human review, but the extraction step used to take days.</p>
+<p><a href="https://belikenative.com">BeLikeNative</a> uses this approach to support over 80 languages. The clipboard integration lets you refine terminology as you write, which keeps the glossary practical instead of theoretical. I built it because I kept switching between tabs to check term consistency, and that friction was slowing me down.</p>
+<p>The broader trend is moving toward API-driven glossary tools that plug into existing translation workflows. That means glossary management will increasingly happen inside the tools teams already use, not in separate spreadsheets.</p>
+<h2>How to start a glossary that actually gets used</h2>
+<p>I've tried the "build a massive glossary upfront" approach. It doesn't work. Nobody reads a 200-term document on day one.</p>
+<p>Start with 20 to 30 terms that cause the most confusion. These are usually the ones that come up in review comments or support tickets. Add context for each term, not just the translation, but when to use it and when not to. Include examples where the distinction matters.</p>
+<p>Put the glossary where your team already works. If that's a GitHub repo, make it a markdown file. If it's Notion, create a database. The format matters less than the location. A glossary nobody can find is a glossary nobody uses.</p>
+<p>Set a review cadence. Monthly works for fast-moving projects. Quarterly is fine for stable ones. The point is that someone looks at it regularly and removes terms that no longer apply.</p>
+<h2>The part most teams skip</h2>
+<p>Glossaries work best when they include what not to say, not just what to say. If "use" should always be "use" in your translations, spell that out. If a term has a common mistranslation, flag it. These negative examples save more time than the positive definitions.</p>
+<p>I've found that the teams who treat glossaries as living tools, updated regularly, embedded in workflows, owned by specific people, get far more value than those who create them once and forget. The difference between a useful glossary and a dead document comes down to maintenance habits, not the initial effort.</p>
+<p>The next step for me is tighter integration between glossary management and real-time writing tools, so term suggestions surface while you're drafting instead of during review.</p>
+<p>I build <a href="https://belikenative.com">BeLikeNative</a>, a free Chrome extension that helps you write better English anywhere on the web. No signup, no data collection.</p>
+<div class="footer">
+<p>Read the original at <a href="https://belikenative.com/how-glossaries-improve-multilingual-communication/">belikenative.com/how-glossaries-improve-multilingual-communication</a></p>
+<p><a href="https://belikenative.com">BeLikeNative</a> is a free Chrome extension for real-time grammar checking and writing improvement.</p>
+</div>
+</article>
+</body>
+</html>
